@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>register form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, skyblue, purple);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex-container {
+
+            max-width: 450px;
+            width: 100%;
+            background-color: white;
+            padding: 20px 20px;
+            box-shadow: 0 0 10px whitesmoke;
+            border-radius: 10px;
+        }
+
+        .flex-container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        .form-group input {
+            margin-right: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .gender-group {
+            margin-left: 20px;
+            margin-top: -12px;
+        }
+
+        button {
+            padding: 5px;
+            margin: 10px;
+            margin-left: 170px;
+            width: 100px;
+            margin-top: 25px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <h2>Register form</h2>
+        <form action="">
+            <div class="form-group">
+                <div>
+                    <label for="">First name:</label><br>
+                    <input type="text" placeholder="enter your first name">
+                </div>
+                <div>
+                    <label for="">Last name:</label><br>
+                    <input type="text" placeholder="enter your Last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="">Email:</label><br>
+                    <input type="email" placeholder="enter your Email">
+                </div>
+                <div>
+                    <label for="">Contact details:</label><br>
+                    <input type="tel" placeholder="enter your mobile number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="">Password:</label><br>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div>
+                    <label for="">Confirm password :</label><br>
+                    <input type="password" placeholder="password">
+                </div>
+            </div>
+            <br>
+
+            <div class="gender-group">
+                <label for="">Gender:</label>
+                <div class="gender-opt">
+                    <input type="radio" name="Gender" value="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="Gender" value="female">
+                    <label>Female</label>
+                    <input type="radio" name="Gender" value="Others">
+                    <label>Others</label>
+                </div>
+            </div>
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
